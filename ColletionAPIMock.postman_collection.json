@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "d603ae1f-a33b-4315-8038-e9abc21d881f",
+		"name": "ColletionAPIMock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8445/smspush/envio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mensagem\": \"string\",\r\n  \"senha\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8445/smspush/envio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8445",
+					"path": [
+						"smspush",
+						"envio"
+					]
+				},
+				"description": "Teste de envio de SMS e Push"
+			},
+			"response": []
+		}
+	]
+}
